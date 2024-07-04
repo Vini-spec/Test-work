@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+	<script
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDp6StcX-IBJ2Rp0ANLo5_oasw76KOvem4&callback=initMap&libraries=&v=weekly"
+		defer="defer"></script>
+	<title>Document</title>
+</head>
+
+<body class="h-100">
+	<div class="wrapper ">
+
+		<header class="header">
+			<div class="container ">
+				<div class="header-content d-flex justify-content-between align-items-center py-2">
+					<div class="header-left d-flex align-items-center" style="height: 64px;">
+						<a class="header-left-link d-flex " href="#">
+							<div class="me-3">
+								<img src="img/Union.png">
+							</div>
+							<div class="header-left-text">
+								<span>User pages</span> - Profile
+							</div>
+						</a>
+					</div>
+					<div class="header-right d-flex ">
+						<a href='#'
+							class="header-right-link text-decoration-none d-flex flex-column align-items-center px-3">
+							<div class="mb-2">
+								<img class="" src="img/Union-2.png">
+							</div>
+							<div class="header-right-text">
+								Statistics
+							</div>
+						</a>
+						<a href="#"
+							class=" header-right-link text-decoration-none d-flex flex-column align-items-center px-3">
+							<div class="mb-2">
+								<img src="img/Union-3.png">
+							</div>
+							<div class="header-right-text">
+								Invoices
+							</div>
+						</a>
+						<a href="#"
+							class=" header-right-link text-decoration-none d-flex flex-column align-items-center px-3">
+							<div class="mb-2">
+								<img src="img/Union-4.png">
+							</div>
+							<div class="header-right-text">
+								Schedule
+							</div>
+
+						</a>
+					</div>
+
+				</div>
+			</div>
+		</header>
+		<nav>
+			<div class="container">
+				<div class="nav-tab-link d-flex justify-content-between">
+					<div class="tab d-flex align-items-center">
+						<ul class="nav">
+							<li class="nav-item  active d-flex" id="activity">
+								<div class="d-flex align-items-center"><img src="img/Union-5.png"></div>
+								<div class="ms-2">Activity</div>
+							</li>
+							<li class="nav-item d-flex " id="map-page">
+								<div class="d-flex align-items-center"><img src="img/Union-6.png"></div>
+								<div class="ms-2">Map</div>
+							</li>
+							<li class="nav-item d-flex " id="time">
+								<div class="d-flex align-items-center"><img src="img/Union-7.png"></div>
+								<div class="ms-2">Time</div>
+							</li>
+						</ul>
+					</div>
+					<div class="nav-link d-flex align-items-center">
+						<ul class="nav">
+							<li class="nav-item  d-flex align-items-center">
+								<div class="d-flex align-items-center"><img src="img/Union-8.png"></div>
+								<div class="ms-2">Notes</div>
+							</li>
+							<li class="nav-item d-flex align-items-center">
+								<div class="d-flex align-items-center"><img src="img/Union-9.png"></div>
+								<div class="ms-2">Friends</div>
+							</li>
+							<li class="nav-item d-flex align-items-center">
+								<div class="d-flex align-items-center"><img src="img/Union-10.png"></div>
+								<div class="ms-2">Photos</div>
+							</li>
+							<li class="nav-item d-flex align-items-center">
+								<div class="d-flex align-items-center"><img src="img/Union-11.png"></div>
+								<div class="ms-3 d-flex align-items-center"><img src="img/Union-12.png"></div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<main>
+			<div class="container">
+				<div class="row gx-4 activity main-content-container">
+					<div class="col-9 pe-3">
+						<div class="accordion" id="accordionPanelsStayOpenExample">
+							<div class="main-post pt-5 px-4 pb-4 mb-4">
+								<div class="image mb-3">
+									<img class="img-fluid" src="img/picture-main.png">
+								</div>
+								<div class="main-username d-flex">
+									<div class="main-username-image">
+										<img src="img/Union-13.png">
+									</div>
+									<div class="main-username-text">
+										<a href="#" class="link-primary text-decoration-none">Jason Anderson</a>
+										commented:
+									</div>
+
+								</div>
+								<div class="main-comment">
+									<div>
+										Don’t sit and wait. Get out there, feel life. Touch the sun, and immerse in the
+										sea.
+										Keep love in your heart. A life without it is like a sunless garden when the
+										flowers
+										are dead. Because summer is passion, memories, light breeze, the sun that
+										appears on
+										the skin and caresses the face.
+									</div>
+									<div>
+										– Jason, <span>10:30 am</span>
+									</div>
+								</div>
+								<div class="main-info d-flex">
+									<div class="d-flex me-4">
+										<div class="main-info-picture">
+											<img src="img/Union-14.png" alt="">
+										</div>
+										<div>
+											432
+										</div>
+									</div>
+									<div class="d-flex">
+										<div class="main-info-picture">
+											<img src="img/Union-15.png" alt="">
+										</div>
+										<div>
+											47
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item mb-4">
+								<h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+									<button class="accordion-button collapsed " type="button" data-bs-toggle="collapse"
+										data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+										aria-controls="panelsStayOpen-collapseTwo">
+										<div class='d-flex justify-content-between w-100'>
+											<div>
+												Sunset Sunset Sunset
+											</div>
+											<div class='d-flex'>
+												<div class="post-time-image">
+													<img src="img/Union-16.png">
+												</div>
+												<div class="post-time">53 minutes ago</div>
+											</div>
+										</div>
+									</button>
+								</h2>
+								<div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+									aria-labelledby="panelsStayOpen-headingTwo">
+									<div class="accordion-body">
+										<div class="image mb-3">
+											<img class="img-fluid" src="img/picture-main.png">
+										</div>
+										<div class="main-username d-flex">
+											<div class="main-username-image">
+												<img src="img/Union-13.png">
+											</div>
+											<div class="main-username-text">
+												<a href="#" class="link-primary text-decoration-none">Jason Anderson</a>
+												commented:
+											</div>
+
+										</div>
+										<div class="main-comment">
+											<div>
+												Don’t sit and wait. Get out there, feel life. Touch the sun, and immerse
+												in
+												the sea.
+												Keep love in your heart. A life without it is like a sunless garden when
+												the
+												flowers
+												are dead. Because summer is passion, memories, light breeze, the sun
+												that
+												appears on
+												the skin and caresses the face.
+											</div>
+											<div>
+												– Jason, <span>10:30 am</span>
+											</div>
+										</div>
+										<div class="main-info d-flex">
+											<div class="d-flex me-4">
+												<div class="main-info-picture">
+													<img src="img/Union-14.png" alt="">
+												</div>
+												<div>
+													432
+												</div>
+											</div>
+											<div class="d-flex">
+												<div class="main-info-picture">
+													<img src="img/Union-15.png" alt="">
+												</div>
+												<div>
+													47
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="panelsStayOpen-headingThree">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+										aria-controls="panelsStayOpen-collapseThree">
+										<div class='d-flex justify-content-between w-100'>
+											<div>
+												Morning of Siberia
+											</div>
+											<div class='d-flex'>
+												<div class="post-time-image">
+													<img src="img/Union-16.png">
+												</div>
+												<div class="post-time">53 minutes ago</div>
+											</div>
+										</div>
+									</button>
+								</h2>
+								<div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+									aria-labelledby="panelsStayOpen-headingThree">
+									<div class="accordion-body">
+										<div class="image mb-3">
+											<img class="img-fluid" src="img/picture-main.png">
+										</div>
+										<div class="main-username d-flex">
+											<div class="main-username-image">
+												<img src="img/Union-13.png">
+											</div>
+											<div class="main-username-text">
+												<a href="#" class="link-primary text-decoration-none">Jason Anderson</a>
+												commented:
+											</div>
+
+										</div>
+										<div class="main-comment">
+											<div>
+												Don’t sit and wait. Get out there, feel life. Touch the sun, and immerse
+												in
+												the sea.
+												Keep love in your heart. A life without it is like a sunless garden when
+												the
+												flowers
+												are dead. Because summer is passion, memories, light breeze, the sun
+												that
+												appears on
+												the skin and caresses the face.
+											</div>
+											<div>
+												– Jason, <span>10:30 am</span>
+											</div>
+										</div>
+										<div class="main-info d-flex">
+											<div class="d-flex me-4">
+												<div class="main-info-picture">
+													<img src="img/Union-14.png" alt="">
+												</div>
+												<div>
+													432
+												</div>
+											</div>
+											<div class="d-flex">
+												<div class="main-info-picture">
+													<img src="img/Union-15.png" alt="">
+												</div>
+												<div>
+													47
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-3 ps-3">
+						<div class="card-myself d-flex flex-column align-items-center">
+							<div>
+								<img class="card-myself-picture" src="img/card-myself-1.png">
+							</div>
+							<h3 class="card-myself-title">Hanna Dorman</h3>
+							<div class="card-myself-subtitle">
+								UX/UI designer
+							</div>
+							<div class="card-social-network d-flex">
+								<a href='#' class="me-2"><img src="img/telega.png"></a>
+								<a href='#' class="me-2"><img src="img/hh.ru__min_ 1.png"></a>
+								<a href='#'><img src="img/twit-2.png"></a>
+							</div>
+						</div>
+						<div class="accordion" id="accordionPanelsStayOpenExample">
+							<div class="navigation accordion-item">
+								<h2 class="accordion-header" id="panelsStayOpen-headingOne">
+									<button class="accordion-button accordion-title" type="button"
+										data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne"
+										aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+										Navigation
+									</button>
+								</h2>
+								<div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+									aria-labelledby="panelsStayOpen-headingOne">
+									<div class="accordion-body px-0">
+										<a href="#" class=" navigation-item d-flex">
+											<div class="d-flex align-items-center"><img src="img/Union-17.png"></div>
+											<div class="nav-item-text">My profile</div>
+										</a>
+										<a href="#" class="navigation-item d-flex justify-content-between">
+											<div class="d-flex">
+												<div class="d-flex align-items-center"><img src="img/Union-18.png">
+												</div>
+												<div class="nav-item-text">Balance</div>
+											</div>
+											<div class="balance">$ 1,430</div>
+										</a>
+										<a href="#" class="navigation-item d-flex justify-content-between">
+											<div class="d-flex">
+												<div class="d-flex align-items-center"><img src="img/Union-19.png">
+												</div>
+												<div class="nav-item-text">Connections</div>
+											</div>
+											<div><span class="Connections-count">29</span></div>
+										</a>
+										<a href="#" class="navigation-item d-flex Friends pb-3">
+											<div class="d-flex align-items-center"><img src="img/Union-20.png"></div>
+											<div class="nav-item-text">Friends</div>
+										</a>
+										<a href="#" class="navigation-item d-flex justify-content-between pt-3">
+											<div class="d-flex">
+												<div class="d-flex align-items-center"><img src="img/Union-21.png">
+												</div>
+												<div class="nav-item-text">Events</div>
+											</div>
+											<div><span class="Connections-count " style="background: #47B091;">45</span>
+											</div>
+										</a>
+										<a href="#" class="navigation-item d-flex">
+											<div class="d-flex align-items-center"><img src="img/Union-22.png"></div>
+											<div class="nav-item-text">Account settings</div>
+										</a>
+
+
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="panelsStayOpen-headingFour">
+									<button class="accordion-button accordion-title" type="button"
+										data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour"
+										aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+										Share your thoughts
+									</button>
+								</h2>
+								<div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse show"
+									aria-labelledby="panelsStayOpen-headingFour">
+									<div class="accordion-body pt-2">
+										<textarea class="form-control mb-2 share-letter"
+											id="exampleFormControlTextarea1" placeholder="Enter your message..."
+											rows="3"></textarea>
+										<button type="button" class="btn btn-primary w-100">Save</button>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="row map-page main-content-container ">
+					<div class="accordion" id="accordionPanelsStayOpenExample">
+						<div class="navigation accordion-item">
+							<h2 class="accordion-header" id="panelsStayOpen-headingOne">
+								<button class="btn-el accordion-button accordion-title" type="button"
+									data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne"
+									aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+									<div class="d-flex justify-content-between w-100">
+										<p class="map-title">Basic map</p>
+										<div class="d-flex align-items-center">
+											<div><img src="img/Union-23.png"></div>
+
+
+											<div class="ms-3 me-3"><img src="img/Union-24.png"></div>
+										</div>
+									</div>
+
+								</button>
+							</h2>
+							<div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+								aria-labelledby="panelsStayOpen-headingOne">
+								<div class="accordion-body px-4 pb-4 position-relative">
+
+									<div id="map">
+									</div>
+									<div class="d-flex justify-content-center spinner align-items-center">
+										<div class="spinner-border" role="status">
+											<span class="visually-hidden">Loading...</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="row time main-content-container">
+					<div class="accordion" id="accordionPanelsStayOpenExample">
+						<div class="navigation accordion-item">
+							<h2 class="accordion-header" id="panelsStayOpen-headingOne">
+								<button class=" btn-el accordion-button accordion-title" type="button"
+									data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne"
+									aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+									<div class="d-flex justify-content-between w-100">
+										<p class="map-title">Timer</p>
+										<div class="d-flex align-items-center">
+											<div><img src="img/Union-23.png"></div>
+
+
+											<div class="ms-3 me-3"><img src="img/Union-24.png"></div>
+										</div>
+									</div>
+								</button>
+							</h2>
+							<div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+								aria-labelledby="panelsStayOpen-headingOne">
+								<div class="accordion-body px-4 pb-4 ">
+									<div class="timer">
+
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</main>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+		</script>
+	<script src="script.js"></script>
+	<script> function initMap() {
+			console.log('qwe')
+			var coords = new google.maps.Point(10, 10);
+			const uluru = { lat: 58.0105, lng: 56.2502 };
+			// The map, centered at Uluru
+			const map = new google.maps.Map(document.getElementById("map"), {
+				zoom: 13,
+				center: uluru,
+				zoomControl: false,
+				disableDoubleClickZoom: true,
+				mapTypeControl: false,
+				scaleControl: false,
+				gestureHandling: "greedy",
+				panControl: false,
+				streetViewControl: true,
+				draggable: true,
+				overviewMapControl: false,
+				fullscreenControl: false,
+			});
+			let icon = {
+				url: 'img/marker-map2.png',
+				labelOrigin: new google.maps.Point(120, 25),
+				scaledSize: new google.maps.Size(30, 50)
+
+			};
+
+			const marker = new google.maps.Marker({
+				position: uluru,
+				map: map,
+				label: {
+					color: 'black',
+					className: 'map-marker-label',
+					fontWeight: '600',
+					fontSize: '17px',
+
+
+
+				},
+				icon: icon,
+				draggable: false
+			});
+		}</script>
+</body>
+
+</html>
